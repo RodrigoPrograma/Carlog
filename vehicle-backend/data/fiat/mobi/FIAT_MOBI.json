@@ -1,0 +1,199 @@
+{
+    "marca": "FIAT",
+    "modelo": "MOBI",
+    "pais": "BRASIL",
+    "a\u00f1os_disponibles": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+    ],
+    "versiones": [
+        {
+            "a\u00f1o": 2016,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "71 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2017,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "72 hp"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2018,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "68 HP"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2019,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "70 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2020,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "68 HP"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2021,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "70 hp"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2022,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "70 hp"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2023,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "76 hp"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "a\u00f1o": 2024,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "70 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "a\u00f1o": 2025,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribuición": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Gasolina",
+                "cilindrada": "1.0L",
+                "potencia": "70 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14 82T"
+            }
+        }
+    ]
+}

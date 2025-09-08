@@ -1,0 +1,197 @@
+{
+    "marca": "FIAT",
+    "modelo": "UNO",
+    "pais": "ARGENTINA",
+    "años_disponibles": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+    ],
+    "versiones": [
+        {
+            "año": 2014,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.4L",
+                "potencia": "85 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "165/70 R13(base), 175/70 R14(Way), 185/60 R15(Sporting)"
+            }
+        },
+        {
+            "año": 2015,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.4L",
+                "potencia": "85 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "165/70 R13(base), 175/70 R14(Way), 185/60 R15(Sporting)"
+            }
+        },
+        {
+            "año": 2016,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.4L",
+                "potencia": "85 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "año": 2017,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.4L",
+                "potencia": "85 CV"
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65 R14"
+            }
+        },
+        {
+            "año": 2018,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "1.0/1.3 6V/8V": {
+                    "nombre": "Firefly",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.3L",
+                    "potencia": "72-99 CV"
+                },
+                "1.0/1.4 8V ": {
+                    "nombre": "Fire",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.4L",
+                    "potencia": "73-85 CV"
+                }
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65R14, 175/70R14(1.3 Firefly, 1.4 Way), 185/60R15(Sporting) "
+            }
+        },
+        {
+            "año": 2019,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "1.0/1.3 6V/8V": {
+                    "nombre": "Firefly",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.3L",
+                    "potencia": "72-99 CV"
+                },
+                "1.0/1.4 8V ": {
+                    "nombre": "Fire",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.4L",
+                    "potencia": "73-85 CV"
+                }
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65R14, 175/70R14(1.3 Firefly, 1.4 Way), 185/60R15(Sporting) "
+            }
+        },
+        {
+            "año": 2020,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "1.0/1.3 6V/8V": {
+                    "nombre": "Firefly",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.3L",
+                    "potencia": "77-109 CV"
+                },
+                "1.0/1.4 8V ": {
+                    "nombre": "Fire",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.4L",
+                    "potencia": "73-85 CV"
+                }
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65R14, 175/70R14(1.3 Firefly, 1.4 Way), 185/60R15(Sporting) "
+            }
+        },
+        {
+            "año": 2021,
+            "transmision": {
+                "caja": "Manual"
+            },
+            "distribucion": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "1.0/1.3 6V/8V": {
+                    "nombre": "Firefly",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.3L",
+                    "potencia": "77-109 CV"
+                },
+                "1.0/1.4 8V ": {
+                    "nombre": "Fire",
+                    "tipo": "Nafta/Etanol",
+                    "cilindrada": "1.0L/1.4L",
+                    "potencia": "73-85 CV"
+                }
+            },
+            "neumaticos": {
+                "cantidad": 4,
+                "medidas": "175/65R14, 175/70R14(1.3 Firefly, 1.4 Way), 185/60R15(Sporting) "
+            }
+        }
+    ]
+}

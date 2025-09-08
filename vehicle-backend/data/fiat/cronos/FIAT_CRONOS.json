@@ -1,0 +1,306 @@
+{
+    "marca": "FIAT",
+    "modelo": "CRONOS",
+    "pais": "ARGENTINA",
+    "años_disponibles": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+    ],
+    "versiones": [
+        {
+            "año": 2018,
+            "transmisión": {
+                "caja": {
+                    "base": "Manual",
+                    "flex": "Manual y automatico"
+                }
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "130 CV - 135 CV FLEX"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195 55 R16"
+            }
+        },
+        {
+            "año": 2018,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribución": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV - 101 CV FLEX"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2019,
+            "transmisión": {
+                "caja": {
+                    "base": "Manual",
+                    "flex": "Manual y automatico"
+                }
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "129 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16"
+            }
+        },
+        {
+            "año": 2019,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribución": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "98 CV - 101 CV FLEX"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2020,
+            "transmisión": {
+                "caja": {
+                    "base": "Manual",
+                    "flex": "Manual"
+                }
+            },
+            "distribución": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2020,
+            "transmisión": {
+                "caja": {
+                    "base": "Manual",
+                    "centenario": "Automatico"
+                }
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "130 cv"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2021,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribución": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV - 105 CV FLEX"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2021,
+            "transmisión": {
+                "caja": "Manual y automatico(Flex)"
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "99 CV - 135 CV FLEX"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15"
+            }
+        },
+        {
+            "año": 2022,
+            "transmisión": {
+                "caja": {
+                    "Atractive & Drive": "Manual"
+                }
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15 88H"
+            }
+        },
+        {
+            "año": 2022,
+            "transmisión": {
+                "caja": {
+                    "Precision": "Manual",
+                    "Precision AT": "Automatico"
+                }
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "130 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16 87H"
+            }
+        },
+        {
+            "año": 2023,
+            "transmisión": {
+                "caja": "Manual"
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16"
+            }
+        },
+        {
+            "año": 2023,
+            "transmisión": {
+                "caja": "Manual/Automática"
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16"
+            }
+        },
+        {
+            "año": 2024,
+            "transmisión": {
+                "Atractive & Drive": "Manual",
+                "Drive CVT": "Automatico"
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "185/60 R15 88H"
+            }
+        },
+        {
+            "año": 2024,
+            "transmisión": {
+                "Precision": "Manual",
+                "Precision CVT": "Automática"
+            },
+            "distribución": {
+                "tipo": "Cadena de distribución"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.8L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16"
+            }
+        },
+        {
+            "año": 2025,
+            "transmisión": {
+                "caja": "Automática CVT"
+            },
+            "distribución": {
+                "tipo": "Correa dentada"
+            },
+            "motor": {
+                "tipo": "Nafta",
+                "cilindrada": "1.3L",
+                "potencia": "99 CV"
+            },
+            "neumáticos": {
+                "cantidad": 4,
+                "medidas": "195/55 R16"
+            }
+        }
+    ]
+}
