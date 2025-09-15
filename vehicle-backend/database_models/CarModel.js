@@ -19,7 +19,7 @@ const versionSchema = new mongoose.Schema({
 
 
 const carSchema = new mongoose.Schema({
-  brand: { type: String, required: true },
+  marca: { type: String, required: true },
   modelo: { type: String, required: true },
   pais: { type: String },
   versiones: [versionSchema]

@@ -31,7 +31,7 @@ router.get('/', async (req, res) => {
         // Devolver datos
         return res.json({
             brand: car.marca,
-            model: car.modelo,
+            model: car.brand,
             country: car.pais,
             data: versionFound
         });
