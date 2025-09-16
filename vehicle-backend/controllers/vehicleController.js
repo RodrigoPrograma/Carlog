@@ -15,6 +15,9 @@ exports.createVehicle = async (req, res) => {
         await newVehicle.save();
         res.status(201).json(newVehicle);
     } catch (error) {
+        if (error.name === 'ValidationError') {
+            return res.status(400).json({ error: error.message });
+        }
         res.status(500).json({ error: error.message });
     }
 };
@@ -33,12 +36,22 @@ exports.getVehicleById = async (req, res) => {
 
 exports.updateVehicle = async (req, res) => {
     try {
-        const vehicle = await Vehicle.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
+        const vehicle = await Vehicle.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true, runValidators: true }
+        );
+
         if (!vehicle) {
-            return res.status(404).json({ message: "Vehiculo no encontrado" });
+            return res.status(404).json({ message: "Vehículo no encontrado" });
         }
+
         res.json(vehicle);
     } catch (error) {
+        if (error.name === 'ValidationError') {
+            const mensajes = Object.values(error.errors).map(e => e.message);
+            return res.status(400).json({ errores: mensajes });
+        }
         res.status(500).json({ error: error.message });
     }
 };
