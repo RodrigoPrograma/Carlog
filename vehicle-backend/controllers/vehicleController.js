@@ -2,10 +2,21 @@ const Vehicle = require("../models/Vehicle");
 
 exports.getAllVehicles = async (req, res) => {
     try {
+        let queryObj = { ...req.query };
+        
+        const { marca, modelo } = req.query;
+
+        let queryStr = JSON.stringify(queryObj);
+        queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
+
         const filter = {};
-        if (req.query.brand) filter.brand = req.query.brand;
-        if (req.query.year) filter.year = req.query.year;
+        if (marca) filter.marca = { $regex: new RegExp(`^${marca}$`, 'i') };
+        if (modelo) filter.modelo = { $regex: new RegExp(`^${modelo}$`, 'i') };
+        console.log("Filter aplicado:", filter);
+
         const vehicles = await Vehicle.find(filter);
+        //const vehicles = await Vehicle.find({});
+        //console.log("Todos los vehículos:", vehicles);
 
         res.status(200).json({
             success: true,
@@ -35,7 +46,7 @@ exports.createVehicle = async (req, res) => {
         if (error.name === "ValidationError") {
             return res.status(400).json({
                 success: false,
-                message: "Datos invalidos para crear el vehículo",
+                message: "Datos inválidos para crear el vehículo",
                 error: error.message,
             });
         }
@@ -69,6 +80,7 @@ exports.getVehicleById = async (req, res) => {
     }
 };
 
+// Actualizar un vehículo
 exports.updateVehicle = async (req, res) => {
     try {
         const vehicle = await Vehicle.findByIdAndUpdate(req.params.id, req.body, {
@@ -77,9 +89,9 @@ exports.updateVehicle = async (req, res) => {
         });
 
         if (!vehicle) {
-            return res.status(404).json({ 
+            return res.status(404).json({
                 success: false,
-                message: "Vehiculo no encontrado"
+                message: "Vehículo no encontrado",
             });
         }
 
@@ -87,19 +99,18 @@ exports.updateVehicle = async (req, res) => {
             success: true,
             data: vehicle,
         });
-
     } catch (error) {
         if (error.name === "ValidationError") {
             return res.status(400).json({
                 success: false,
-                message: "Datos invalidos para actualizar el vehículo",
+                message: "Datos inválidos para actualizar el vehículo",
                 error: error.errors,
             });
         }
-        res.status(500).json({ 
+        res.status(500).json({
             success: false,
             message: "Error del servidor al actualizar el vehículo",
-            error: error.message
+            error: error.message,
         });
     }
 };
@@ -110,18 +121,18 @@ exports.deleteVehicle = async (req, res) => {
         if (!vehicle) {
             return res.status(404).json({
                 success: false,
-                message: "Vehiculo no encontrado"
+                message: "Vehículo no encontrado",
             });
         }
-        res.json({
+        res.status(200).json({
             success: true,
-            message: "Vehiculo eliminado con exito"
+            message: "Vehículo eliminado con éxito",
         });
     } catch (error) {
         res.status(500).json({
             success: false,
             message: "Error del servidor al eliminar el vehículo",
-            error: error.message
+            error: error.message,
         });
     }
 };
