@@ -12,9 +12,10 @@
 - [x] Probar PUT `/api/vehicles/:id` (editar un vehículo)  
 - [x] Probar DELETE `/api/vehicles/:id` (eliminar un vehículo)  
 - [x] Agregar validaciones en el modelo (`required`, valores por defecto)  
-- [ ] Mejorar controladores (mensajes de error claros, 400/404/500)  
-- [ ] Implementar filtros (ej: `GET /api/vehicles?brand=Toyota`)  
-- [ ] Implementar paginación  
+- [x] Mejorar controladores (mensajes de error claros, 400/404/500)  
+- [x] Implementar filtros (ej: `GET /api/vehicles?brand=Toyota`)  
+- [ ] Implementar paginación 
+- [ ] Dockerizar la API
 
 ## 2. Entorno y organización
 - [x] Crear `.env` con `MONGODB_URI`  
