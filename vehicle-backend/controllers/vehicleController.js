@@ -3,26 +3,57 @@ const Vehicle = require("../models/Vehicle");
 exports.getAllVehicles = async (req, res) => {
     try {
         let queryObj = { ...req.query };
-        
-        const { marca, modelo } = req.query;
-
-        let queryStr = JSON.stringify(queryObj);
-        queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
+        const { marca, modelo, año } = req.query;
 
         const filter = {};
-        if (marca) filter.marca = { $regex: new RegExp(`^${marca}$`, 'i') };
-        if (modelo) filter.modelo = { $regex: new RegExp(`^${modelo}$`, 'i') };
-        console.log("Filter aplicado:", filter);
+        if (marca) {
+            filter.marca = { $regex: new RegExp(`^${marca}$`, 'i') };
+        }
+        if (modelo) {
+            filter.modelo = { $regex: new RegExp(`^${modelo}$`, 'i') };
+        }
+        if (año && typeof año !== "object") {
+            // Año único como número
+            filter["versiones.año"] = parseInt(año);
+        }
 
-        const vehicles = await Vehicle.find(filter);
-        //const vehicles = await Vehicle.find({});
-        //console.log("Todos los vehículos:", vehicles);
+        // Paginación
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 10;
+        const skip = (page - 1) * limit;
+
+        // Buscar vehículos
+        const vehicles = await Vehicle.find(filter).skip(skip).limit(limit);
+        const total = await Vehicle.countDocuments(filter);
+
+        // Filtrar las versiones según rango de años si es necesario
+        const filteredVehicles = vehicles.map(vehicle => {
+            let versionesFiltradas = vehicle.versiones;
+
+            if (año && typeof año === "object") {
+                const gte = año.gte ? parseInt(año.gte) : null;
+                const lte = año.lte ? parseInt(año.lte) : null;
+                versionesFiltradas = vehicle.versiones.filter(v => {
+                    return (gte === null || v.año >= gte) && (lte === null || v.año <= lte);
+                });
+            }
+
+            return {
+                ...vehicle.toObject(),
+                versiones: versionesFiltradas
+            };
+        });
 
         res.status(200).json({
             success: true,
-            count: vehicles.length,
-            data: vehicles,
+            page,
+            limit,
+            total,
+            totalPages: Math.ceil(total / limit),
+            count: filteredVehicles.length,
+            data: filteredVehicles,
         });
+
     } catch (error) {
         res.status(500).json({
             success: false,
@@ -31,6 +62,7 @@ exports.getAllVehicles = async (req, res) => {
         });
     }
 };
+
 
 exports.createVehicle = async (req, res) => {
     try {
