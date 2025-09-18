@@ -14,7 +14,7 @@
 - [x] Agregar validaciones en el modelo (`required`, valores por defecto)  
 - [x] Mejorar controladores (mensajes de error claros, 400/404/500)  
 - [x] Implementar filtros (ej: `GET /api/vehicles?brand=Toyota`)  
-- [ ] Implementar paginación 
+- [x] Implementar paginación 
 - [ ] Dockerizar la API
 
 ## 2. Entorno y organización
