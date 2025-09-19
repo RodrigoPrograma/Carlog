@@ -14,8 +14,7 @@
 - [x] Agregar validaciones en el modelo (`required`, valores por defecto)  
 - [x] Mejorar controladores (mensajes de error claros, 400/404/500)  
 - [x] Implementar filtros (ej: `GET /api/vehicles?brand=Toyota`)  
-- [x] Implementar paginación 
-- [ ] Dockerizar la API
+- [x] Implementar paginación  
 
 ## 2. Entorno y organización
 - [x] Crear `.env` con `MONGODB_URI`  
@@ -24,13 +23,20 @@
 - [ ] Configurar ESLint/Prettier para tener código limpio  
 - [ ] (Opcional) Crear documentación con Swagger  
 
-## 3. Pruebas
+## 3. Docker y CI/CD
+- [ ] Dockerizar la API (`Dockerfile`)  
+- [ ] Crear `docker-compose.yml` (API + MongoDB local)  
+- [ ] Probar levantar entorno con `docker-compose up`  
+- [ ] Crear workflow de CI en GitHub Actions (build + test)  
+- [ ] Crear workflow de CD (deploy automático a Render/Cloud Run)  
+
+## 4. Pruebas
 - [ ] Testear CRUD completo en Postman  
 - [ ] Crear colección de Postman exportable  
 - [ ] Implementar tests unitarios con Jest o Mocha  
 - [ ] Automatizar tests en GitHub Actions (CI/CD)  
 
-## 4. Frontend (React Native)
+## 5. Frontend (React Native)
 - [ ] Crear proyecto en React Native  
 - [ ] Conectar la app a la API (`fetch` o `axios`)  
 - [ ] Pantalla: Lista de vehículos (GET `/api/vehicles`)  
@@ -39,7 +45,7 @@
 - [ ] Formulario: Editar vehículo (PUT `/api/vehicles/:id`)  
 - [ ] Botón: Eliminar vehículo (DELETE `/api/vehicles/:id`)  
 
-## 5. Extras / Escalabilidad
+## 6. Extras / Escalabilidad
 - [ ] Autenticación (JWT) si querés usuarios con login  
 - [ ] Roles (admin, usuario)  
 - [ ] Deploy del backend (ej. en Render, Railway o Vercel con DB en Atlas)  
