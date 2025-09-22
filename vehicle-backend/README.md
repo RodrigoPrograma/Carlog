@@ -1,9 +1,31 @@
 # 🚗 CarLog API
 
 API REST para la gestión de vehículos desarrollada con **Node.js, Express y MongoDB**.
-Código limpio con ESLint y Prettier
 
-## 🔗 Endpoints
+
+## Instalación y uso
+# Clonar repositorio
+git clone https://github.com/RodrigoPrograma/Carlog
+
+# Entrar en el proyecto
+cd carlog/vehicle-backend
+
+# Instalar dependencias
+npm install
+
+# Crear archivo .env
+
+# Reemplaza <usuario> y <password> con tus credenciales de MongoDB Atlas
+MONGODB_URI=mongodb+srv://<usuario>:<password>@cluster0.mongodb.net/carlog?retryWrites=true&w=majority
+
+Levantar servidor
+npm run dev
+
+La API se ejecuta en:
+http://localhost:3000/api/vehicles
+
+
+## Endpoints
 
 📍 1. Obtener todos los vehículos
 
@@ -113,7 +135,7 @@ Respuesta:
   }
 }
 
-📍 5. Editar un vehículo
+📍 5. Eliminar un vehículo
 DELETE /api/vehicles/:id
 **Ejemplo:**
 curl -X DELETE http://localhost:3000/api/vehicles/66e7b7...
@@ -123,24 +145,18 @@ Respuesta:
   "message": "Vehículo eliminado correctamente"
 }
 
-⚙️ Instalación y uso
-# Clonar repositorio
-git clone https://github.com/RodrigoPrograma/Carlog
 
-# Entrar en el proyecto
-cd carlog/vehicle-backend
+## Código limpio y estilo
 
-# Instalar dependencias
-npm install
+Este proyecto utiliza **ESLint** y **Prettier** para mantener el código consistente y limpio.
 
-# Crear archivo .env
-# Reemplaza <usuario> y <password> con tus credenciales de MongoDB Atlas
-MONGODB_URI=mongodb+srv://<usuario>:<password>@cluster0.mongodb.net/carlog?retryWrites=true&w=majority
+- **ESLint**: ayuda a detectar errores, malas prácticas y mantener un estilo uniforme.
+- **Prettier**: formatea automáticamente el código según reglas definidas (en este proyecto, 4 espacios por indentación y comillas dobles `"`) para mantener consistencia.
 
-# Levantar servidor
-npm run dev
+### Comandos útiles
 
-La API se ejecuta en:
-http://localhost:3000/api/vehicles
+- Formatear todo el proyecto con Prettier:
+```bash
+npm run format
+npm run lint
 
-````

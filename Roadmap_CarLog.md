@@ -19,8 +19,8 @@
 ## 2. Entorno y organización
 - [x] Crear `.env` con `MONGODB_URI`  
 - [x] Ignorar `.env` en `.gitignore`  
-- [ ] Documentar endpoints en un README (ejemplo de request y response)  
-- [ ] Configurar ESLint/Prettier para tener código limpio  
+- [x] Documentar endpoints en un README (ejemplo de request y response)  
+- [x] Configurar ESLint/Prettier para tener código limpio  
 - [ ] (Opcional) Crear documentación con Swagger  
 
 ## 3. Docker y CI/CD
