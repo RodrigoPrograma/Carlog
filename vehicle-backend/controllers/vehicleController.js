@@ -1,8 +1,7 @@
-const Vehicle = require("../models/Vehicle");
+const Vehicle = require('../models/Vehicle');
 
 exports.getAllVehicles = async (req, res) => {
     try {
-        let queryObj = { ...req.query };
         const { marca, modelo, año } = req.query;
 
         const filter = {};
@@ -12,9 +11,9 @@ exports.getAllVehicles = async (req, res) => {
         if (modelo) {
             filter.modelo = { $regex: new RegExp(`^${modelo}$`, 'i') };
         }
-        if (año && typeof año !== "object") {
+        if (año && typeof año !== 'object') {
             // Año único como número
-            filter["versiones.año"] = parseInt(año);
+            filter['versiones.año'] = parseInt(año);
         }
 
         // Paginación
@@ -27,20 +26,23 @@ exports.getAllVehicles = async (req, res) => {
         const total = await Vehicle.countDocuments(filter);
 
         // Filtrar las versiones según rango de años si es necesario
-        const filteredVehicles = vehicles.map(vehicle => {
+        const filteredVehicles = vehicles.map((vehicle) => {
             let versionesFiltradas = vehicle.versiones;
 
-            if (año && typeof año === "object") {
+            if (año && typeof año === 'object') {
                 const gte = año.gte ? parseInt(año.gte) : null;
                 const lte = año.lte ? parseInt(año.lte) : null;
-                versionesFiltradas = vehicle.versiones.filter(v => {
-                    return (gte === null || v.año >= gte) && (lte === null || v.año <= lte);
+                versionesFiltradas = vehicle.versiones.filter((v) => {
+                    return (
+                        (gte === null || v.año >= gte) &&
+                        (lte === null || v.año <= lte)
+                    );
                 });
             }
 
             return {
                 ...vehicle.toObject(),
-                versiones: versionesFiltradas
+                versiones: versionesFiltradas,
             };
         });
 
@@ -53,16 +55,14 @@ exports.getAllVehicles = async (req, res) => {
             count: filteredVehicles.length,
             data: filteredVehicles,
         });
-
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error al obtener los vehículos",
+            message: 'Error al obtener los vehículos',
             error: error.message,
         });
     }
 };
-
 
 exports.createVehicle = async (req, res) => {
     try {
@@ -71,20 +71,20 @@ exports.createVehicle = async (req, res) => {
 
         res.status(201).json({
             success: true,
-            message: "Vehículo creado correctamente",
+            message: 'Vehículo creado correctamente',
             data: newVehicle,
         });
     } catch (error) {
-        if (error.name === "ValidationError") {
+        if (error.name === 'ValidationError') {
             return res.status(400).json({
                 success: false,
-                message: "Datos inválidos para crear el vehículo",
+                message: 'Datos inválidos para crear el vehículo',
                 error: error.message,
             });
         }
         res.status(500).json({
             success: false,
-            message: "Error del servidor al crear el vehículo",
+            message: 'Error del servidor al crear el vehículo',
             error: error.message,
         });
     }
@@ -96,7 +96,7 @@ exports.getVehicleById = async (req, res) => {
         if (!vehicle) {
             return res.status(404).json({
                 success: false,
-                message: "Vehículo no encontrado",
+                message: 'Vehículo no encontrado',
             });
         }
         res.status(200).json({
@@ -106,7 +106,7 @@ exports.getVehicleById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error al obtener el vehículo",
+            message: 'Error al obtener el vehículo',
             error: error.message,
         });
     }
@@ -115,15 +115,19 @@ exports.getVehicleById = async (req, res) => {
 // Actualizar un vehículo
 exports.updateVehicle = async (req, res) => {
     try {
-        const vehicle = await Vehicle.findByIdAndUpdate(req.params.id, req.body, {
-            new: true,
-            runValidators: true,
-        });
+        const vehicle = await Vehicle.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            {
+                new: true,
+                runValidators: true,
+            },
+        );
 
         if (!vehicle) {
             return res.status(404).json({
                 success: false,
-                message: "Vehículo no encontrado",
+                message: 'Vehículo no encontrado',
             });
         }
 
@@ -132,16 +136,16 @@ exports.updateVehicle = async (req, res) => {
             data: vehicle,
         });
     } catch (error) {
-        if (error.name === "ValidationError") {
+        if (error.name === 'ValidationError') {
             return res.status(400).json({
                 success: false,
-                message: "Datos inválidos para actualizar el vehículo",
+                message: 'Datos inválidos para actualizar el vehículo',
                 error: error.errors,
             });
         }
         res.status(500).json({
             success: false,
-            message: "Error del servidor al actualizar el vehículo",
+            message: 'Error del servidor al actualizar el vehículo',
             error: error.message,
         });
     }
@@ -153,17 +157,17 @@ exports.deleteVehicle = async (req, res) => {
         if (!vehicle) {
             return res.status(404).json({
                 success: false,
-                message: "Vehículo no encontrado",
+                message: 'Vehículo no encontrado',
             });
         }
         res.status(200).json({
             success: true,
-            message: "Vehículo eliminado con éxito",
+            message: 'Vehículo eliminado con éxito',
         });
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error del servidor al eliminar el vehículo",
+            message: 'Error del servidor al eliminar el vehículo',
             error: error.message,
         });
     }

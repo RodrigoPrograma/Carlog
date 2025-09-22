@@ -1,6 +1,7 @@
 # 🚗 CarLog API
 
-API REST para la gestión de vehículos desarrollada con **Node.js, Express y MongoDB**.  
+API REST para la gestión de vehículos desarrollada con **Node.js, Express y MongoDB**.
+Código limpio con ESLint y Prettier
 
 ## 🔗 Endpoints
 
@@ -8,16 +9,17 @@ API REST para la gestión de vehículos desarrollada con **Node.js, Express y Mo
 
 curl http://localhost:3000/api/vehicles
 
-
 **Query params opcionales:**
-- `marca` → filtra por marca (ej: `Toyota`)  
-- `modelo` → filtra por modelo (ej: `Corolla`)  
-- `año` → filtra por año (ej: `2018`)  
-- `page` → número de página (ej: `1`)  
-- `limit` → resultados por página (ej: `10`)  
+
+- `marca` → filtra por marca (ej: `Toyota`)
+- `modelo` → filtra por modelo (ej: `Corolla`)
+- `año` → filtra por año (ej: `2018`)
+- `page` → número de página (ej: `1`)
+- `limit` → resultados por página (ej: `10`)
 
 **Ejemplo:**
-```bash
+
+````bash
 curl http://localhost:3000/api/vehicles?marca=Toyota&año=2018&page=1&limit=5
 
 Respuesta:
@@ -141,3 +143,4 @@ npm run dev
 La API se ejecuta en:
 http://localhost:3000/api/vehicles
 
+````

@@ -2,16 +2,7 @@
     "marca": "FIAT",
     "modelo": "UNO",
     "pais": "ARGENTINA",
-    "años_disponibles": [
-        2014,
-        2015,
-        2016,
-        2017,
-        2018,
-        2019,
-        2020,
-        2021
-    ],
+    "años_disponibles": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
     "versiones": [
         {
             "año": 2014,
