@@ -2,34 +2,37 @@
 
 API REST para la gestión de vehículos desarrollada con **Node.js, Express y MongoDB**.
 
-
 ## Instalación y uso
-# Clonar repositorio
-git clone https://github.com/RodrigoPrograma/Carlog
 
-# Entrar en el proyecto
+## Clonar repositorio
+
+git clone <https://github.com/RodrigoPrograma/Carlog>
+
+## Entrar en el proyecto
+
 cd carlog/vehicle-backend
 
-# Instalar dependencias
+## Instalar dependencias
+
 npm install
 
-# Crear archivo .env
+## Crear archivo .env
 
-# Reemplaza <usuario> y <password> con tus credenciales de MongoDB Atlas
-MONGODB_URI=mongodb+srv://<usuario>:<password>@cluster0.mongodb.net/carlog?retryWrites=true&w=majority
+## Reemplaza 'usuario' y 'password' con tus credenciales de MongoDB Atlas
+
+MONGODB_URI=mongodb+srv://'usuario':'password'@cluster0.mongodb.net/carlog?retryWrites=true&w=majority
 
 Levantar servidor
 npm run dev
 
 La API se ejecuta en:
-http://localhost:3000/api/vehicles
-
+<http://localhost:3000/api/vehicles>
 
 ## Endpoints
 
 📍 1. Obtener todos los vehículos
 
-curl http://localhost:3000/api/vehicles
+curl <http://localhost:3000/api/vehicles>
 
 **Query params opcionales:**
 
@@ -153,9 +156,50 @@ Este proyecto utiliza **ESLint** y **Prettier** para mantener el código consist
 - **ESLint**: ayuda a detectar errores, malas prácticas y mantener un estilo uniforme.
 - **Prettier**: formatea automáticamente el código según reglas definidas (en este proyecto, 4 espacios por indentación y comillas dobles `"`) para mantener consistencia.
 
+````
+
+## 🐳 Docker
+
+### 1. Requisitos
+
+Tener instalado Docker
+.
+Tener el archivo .env en la carpeta vehicle-backend.
+
+### 2. Construir la imagen
+
+Desde la carpeta vehicle-backend:
+
+docker compose build backend
+
+### 3. Levantar contenedor
+
+docker compose up -d
+
+El contenedor se llama carlog-backend.
+
+La API se expondrá en el puerto 3000.
+
+Nodemon está configurado para desarrollo y detectará cambios en tu código automáticamente.
+
+### 4. Ver logs del contenedor
+
+docker compose logs -f backend
+
+### 5. Detener y eliminar contenedores
+
+docker compose down
+
+### 6. Acceder al contenedor
+
+docker compose exec backend sh
+
+Dentro del contenedor podés ejecutar comandos como printenv MONGODB_URI para verificar variables de entorno.
+
 ### Comandos útiles
 
 - Formatear todo el proyecto con Prettier:
+
 ```bash
 npm run format
 npm run lint

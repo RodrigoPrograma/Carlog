@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Car = require('../database_models/carModel.js');
+const Car = require('../database_models/CarModel.js');
 
 // Ruta para buscar por marca, modelo y año
 router.get('/', async (req, res) => {

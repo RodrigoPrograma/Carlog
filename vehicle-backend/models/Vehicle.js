@@ -1,3 +1,3 @@
-const Car = require('../database_models/carModel');
+const Car = require('../database_models/CarModel');
 
 module.exports = Car;
