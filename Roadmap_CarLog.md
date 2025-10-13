@@ -1,6 +1,7 @@
 # 🛣️ Roadmap CarLog
 
 ## 1. Backend (API con Node.js + MongoDB)
+
 - [x] Crear proyecto con Express y Mongoose  
 - [x] Conectar a MongoDB Atlas  
 - [x] Definir modelo `Car` con sus campos  
@@ -17,6 +18,7 @@
 - [x] Implementar paginación  
 
 ## 2. Entorno y organización
+
 - [x] Crear `.env` con `MONGODB_URI`  
 - [x] Ignorar `.env` en `.gitignore`  
 - [x] Documentar endpoints en un README (ejemplo de request y response)  
@@ -24,19 +26,22 @@
 - [ ] (Opcional) Crear documentación con Swagger  
 
 ## 3. Docker y CI/CD
-- [ ] Dockerizar la API (`Dockerfile`)  
-- [ ] Crear `docker-compose.yml` (API + MongoDB local)  
-- [ ] Probar levantar entorno con `docker-compose up`  
+
+- [x] Dockerizar la API (`Dockerfile`)  
+- [X] Crear `docker-compose.yml` (API + MongoDB local)  
+- [x] Probar levantar entorno con `docker-compose up`  
 - [ ] Crear workflow de CI en GitHub Actions (build + test)  
 - [ ] Crear workflow de CD (deploy automático a Render/Cloud Run)  
 
 ## 4. Pruebas
+
 - [ ] Testear CRUD completo en Postman  
 - [ ] Crear colección de Postman exportable  
 - [ ] Implementar tests unitarios con Jest o Mocha  
 - [ ] Automatizar tests en GitHub Actions (CI/CD)  
 
 ## 5. Frontend (React Native)
+
 - [ ] Crear proyecto en React Native  
 - [ ] Conectar la app a la API (`fetch` o `axios`)  
 - [ ] Pantalla: Lista de vehículos (GET `/api/vehicles`)  
@@ -46,6 +51,7 @@
 - [ ] Botón: Eliminar vehículo (DELETE `/api/vehicles/:id`)  
 
 ## 6. Extras / Escalabilidad
+
 - [ ] Autenticación (JWT) si querés usuarios con login  
 - [ ] Roles (admin, usuario)  
 - [ ] Deploy del backend (ej. en Render, Railway o Vercel con DB en Atlas)  
