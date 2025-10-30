@@ -196,6 +196,10 @@ docker compose exec backend sh
 
 Dentro del contenedor podés ejecutar comandos como printenv MONGODB_URI para verificar variables de entorno.
 
+## 🧪 Testing
+
+El proyecto incluye un conjunto de pruebas con **Jest** y **Supertest** para garantizar la estabilidad de los controladores y endpoints principales.
+
 ### Comandos útiles
 
 - Formatear todo el proyecto con Prettier:
@@ -203,4 +207,7 @@ Dentro del contenedor podés ejecutar comandos como printenv MONGODB_URI para ve
 ```bash
 npm run format
 npm run lint
+
+### 🔹 Ejecución de los tests
+npm test
 
