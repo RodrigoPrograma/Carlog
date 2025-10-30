@@ -9,7 +9,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
-        "test": "jest"
+        "test": "jest --runInBand",
+        "test:coverage": "jest --runInBand --coverage"
     },
     "keywords": [],
     "author": "",
@@ -25,6 +26,21 @@
         "eslint-plugin-prettier": "^5.5.4",
         "jest": "^30.2.0",
         "nodemon": "^3.1.10",
-        "prettier": "^3.6.2"
+        "prettier": "^3.6.2",
+        "supertest": "^7.1.4"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "<rootDir>/tests/setupTest.js"
+        ],
+        "collectCoverage": true,
+        "coverageThreshold": {
+            "global": {
+                "branches": 50,
+                "functions": 75,
+                "lines": 80,
+                "statements": 80
+            }
+        }
     }
 }
