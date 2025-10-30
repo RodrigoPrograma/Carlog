@@ -30,15 +30,15 @@
 - [x] Dockerizar la API (`Dockerfile`)  
 - [X] Crear `docker-compose.yml` (API + MongoDB local)  
 - [x] Probar levantar entorno con `docker-compose up`  
-- [ ] Crear workflow de CI en GitHub Actions (build + test)  
+- [X] Crear workflow de CI en GitHub Actions (build + test)  
 - [ ] Crear workflow de CD (deploy automático a Render/Cloud Run)  
 
 ## 4. Pruebas
 
-- [ ] Testear CRUD completo en Postman  
+- [x] Testear CRUD completo en Postman  
 - [ ] Crear colección de Postman exportable  
-- [ ] Implementar tests unitarios con Jest o Mocha  
-- [ ] Automatizar tests en GitHub Actions (CI/CD)  
+- [x] Implementar tests unitarios con Jest o Mocha  
+- [x] Automatizar tests en GitHub Actions (CI/CD)  
 
 ## 5. Frontend (React Native)
 

@@ -1,32 +1,30 @@
-name: CI - Build & Test
+name: 🚀 CI - Test & Coverage
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    env:
-      MONGO_URI: ${{ secrets.MONGO_URI }}
-      PORT: ${{ secrets.PORT }}
-
     steps:
-      - name: Checkout
+      - name: 📦 Checkout del código
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: 🟢 Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        working-directory: ./vehicle-backend
+      - name: 📁 Instalar dependencias
         run: npm ci
 
-      - name: Run tests
-        working-directory: ./vehicle-backend
-        run: npm test
+      - name: 🧪 Ejecutar tests con cobertura
+        run: npm run test:coverage
+
+      - name: 📊 Verificar umbral de cobertura
+        run: |
+          COVERAGE=$(npx jest --coverage --coverageThreshold='{"global":{"branches":80,"functions":80,"lines":80,"statements":80}}')
+          echo "$COVERAGE"
