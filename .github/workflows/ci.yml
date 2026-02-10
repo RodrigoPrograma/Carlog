@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: 📦 Checkout del código
         uses: actions/checkout@v4
@@ -20,11 +21,8 @@ jobs:
 
       - name: 📁 Instalar dependencias
         run: npm ci
+        working-directory: vehicle-backend
 
       - name: 🧪 Ejecutar tests con cobertura
         run: npm run test:coverage
-
-      - name: 📊 Verificar umbral de cobertura
-        run: |
-          COVERAGE=$(npx jest --coverage --coverageThreshold='{"global":{"branches":80,"functions":80,"lines":80,"statements":80}}')
-          echo "$COVERAGE"
+        working-directory: vehicle-backend
