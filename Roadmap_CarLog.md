@@ -31,7 +31,7 @@
 - [X] Crear `docker-compose.yml` (API + MongoDB local)  
 - [x] Probar levantar entorno con `docker-compose up`  
 - [X] Crear workflow de CI en GitHub Actions (build + test)  
-- [ ] Crear workflow de CD (deploy automático a Render/Cloud Run)  
+- [X] Crear workflow de CD (deploy automático a Render/Cloud Run)  
 
 ## 4. Pruebas
 
@@ -54,5 +54,5 @@
 
 - [ ] Autenticación (JWT) si querés usuarios con login  
 - [ ] Roles (admin, usuario)  
-- [ ] Deploy del backend (ej. en Render, Railway o Vercel con DB en Atlas)  
+- [X] Deploy del backend (ej. en Render, Railway o Vercel con DB en Atlas)  
 - [ ] Deploy del frontend en Expo o Google Play  
