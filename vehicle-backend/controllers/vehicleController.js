@@ -112,7 +112,6 @@ exports.getVehicleById = async (req, res) => {
     }
 };
 
-// Actualizar un vehículo
 exports.updateVehicle = async (req, res) => {
     try {
         const vehicle = await Vehicle.findByIdAndUpdate(
