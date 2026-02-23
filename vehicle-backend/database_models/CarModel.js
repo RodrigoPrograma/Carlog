@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const versionSchema = new mongoose.Schema(
     {
-        año: {
+        anio: {
             type: Number,
             required: true,
             min: 2010,

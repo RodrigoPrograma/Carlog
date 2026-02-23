@@ -2,10 +2,10 @@
     "marca": "FIAT",
     "modelo": "CRONOS",
     "pais": "ARGENTINA",
-    "años_disponibles": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "anios_disponibles": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
     "versiones": [
         {
-            "año": 2018,
+            "anio": 2018,
             "transmision": {
                 "caja": {
                     "base": "Manual",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "año": 2018,
+            "anio": 2018,
             "transmision": {
                 "caja": "Manual"
             },
@@ -44,7 +44,7 @@
             }
         },
         {
-            "año": 2019,
+            "anio": 2019,
             "transmision": {
                 "caja": {
                     "base": "Manual",
@@ -65,7 +65,7 @@
             }
         },
         {
-            "año": 2019,
+            "anio": 2019,
             "transmision": {
                 "caja": "Manual"
             },
@@ -83,7 +83,7 @@
             }
         },
         {
-            "año": 2020,
+            "anio": 2020,
             "transmision": {
                 "caja": {
                     "base": "Manual",
@@ -104,7 +104,7 @@
             }
         },
         {
-            "año": 2020,
+            "anio": 2020,
             "transmision": {
                 "caja": {
                     "base": "Manual",
@@ -125,7 +125,7 @@
             }
         },
         {
-            "año": 2021,
+            "anio": 2021,
             "transmision": {
                 "caja": "Manual"
             },
@@ -143,7 +143,7 @@
             }
         },
         {
-            "año": 2021,
+            "anio": 2021,
             "transmision": {
                 "caja": "Manual y automatico(Flex)"
             },
@@ -161,7 +161,7 @@
             }
         },
         {
-            "año": 2022,
+            "anio": 2022,
             "transmision": {
                 "caja": {
                     "Atractive & Drive": "Manual"
@@ -181,7 +181,7 @@
             }
         },
         {
-            "año": 2022,
+            "anio": 2022,
             "transmision": {
                 "caja": {
                     "Precision": "Manual",
@@ -202,7 +202,7 @@
             }
         },
         {
-            "año": 2023,
+            "anio": 2023,
             "transmision": {
                 "caja": "Manual"
             },
@@ -220,7 +220,7 @@
             }
         },
         {
-            "año": 2023,
+            "anio": 2023,
             "transmision": {
                 "caja": "Manual/Automática"
             },
@@ -238,7 +238,7 @@
             }
         },
         {
-            "año": 2024,
+            "anio": 2024,
             "transmision": {
                 "Atractive & Drive": "Manual",
                 "Drive CVT": "Automatico"
@@ -257,7 +257,7 @@
             }
         },
         {
-            "año": 2024,
+            "anio": 2024,
             "transmision": {
                 "Precision": "Manual",
                 "Precision CVT": "Automática"
@@ -276,7 +276,7 @@
             }
         },
         {
-            "año": 2025,
+            "anio": 2025,
             "transmision": {
                 "caja": "Automática CVT"
             },

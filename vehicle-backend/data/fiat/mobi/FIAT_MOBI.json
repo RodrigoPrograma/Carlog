@@ -2,12 +2,12 @@
     "marca": "FIAT",
     "modelo": "MOBI",
     "pais": "BRASIL",
-    "a\u00f1os_disponibles": [
+    "anios_disponibles": [
         2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025
     ],
     "versiones": [
         {
-            "a\u00f1o": 2016,
+            "anio": 2016,
             "transmision": {
                 "caja": "Manual"
             },
@@ -25,7 +25,7 @@
             }
         },
         {
-            "a\u00f1o": 2017,
+            "anio": 2017,
             "transmision": {
                 "caja": "Manual"
             },
@@ -43,7 +43,7 @@
             }
         },
         {
-            "a\u00f1o": 2018,
+            "anio": 2018,
             "transmision": {
                 "caja": "Manual"
             },
@@ -61,7 +61,7 @@
             }
         },
         {
-            "a\u00f1o": 2019,
+            "anio": 2019,
             "transmision": {
                 "caja": "Manual"
             },
@@ -79,7 +79,7 @@
             }
         },
         {
-            "a\u00f1o": 2020,
+            "anio": 2020,
             "transmision": {
                 "caja": "Manual"
             },
@@ -97,7 +97,7 @@
             }
         },
         {
-            "a\u00f1o": 2021,
+            "anio": 2021,
             "transmision": {
                 "caja": "Manual"
             },
@@ -115,7 +115,7 @@
             }
         },
         {
-            "a\u00f1o": 2022,
+            "anio": 2022,
             "transmision": {
                 "caja": "Manual"
             },
@@ -133,7 +133,7 @@
             }
         },
         {
-            "a\u00f1o": 2023,
+            "anio": 2023,
             "transmision": {
                 "caja": "Manual"
             },
@@ -151,7 +151,7 @@
             }
         },
         {
-            "a\u00f1o": 2024,
+            "anio": 2024,
             "transmision": {
                 "caja": "Manual"
             },
@@ -169,7 +169,7 @@
             }
         },
         {
-            "a\u00f1o": 2025,
+            "anio": 2025,
             "transmision": {
                 "caja": "Manual"
             },

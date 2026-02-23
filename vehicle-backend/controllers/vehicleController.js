@@ -2,7 +2,7 @@ const Vehicle = require('../models/Vehicle');
 
 exports.getAllVehicles = async (req, res) => {
     try {
-        const { marca, modelo, año } = req.query;
+        const { marca, modelo, anio } = req.query;
 
         const filter = {};
         if (marca) {
@@ -11,9 +11,9 @@ exports.getAllVehicles = async (req, res) => {
         if (modelo) {
             filter.modelo = { $regex: new RegExp(`^${modelo}$`, 'i') };
         }
-        if (año && typeof año !== 'object') {
-            // Año único como número
-            filter['versiones.año'] = parseInt(año);
+        if (anio && typeof anio !== 'object') {
+            // anio único como número
+            filter['versiones.anio'] = parseInt(anio);
         }
 
         // Paginación
@@ -25,17 +25,17 @@ exports.getAllVehicles = async (req, res) => {
         const vehicles = await Vehicle.find(filter).skip(skip).limit(limit);
         const total = await Vehicle.countDocuments(filter);
 
-        // Filtrar las versiones según rango de años si es necesario
+        // Filtrar las versiones según rango de anios si es necesario
         const filteredVehicles = vehicles.map((vehicle) => {
             let versionesFiltradas = vehicle.versiones;
 
-            if (año && typeof año === 'object') {
-                const gte = año.gte ? parseInt(año.gte) : null;
-                const lte = año.lte ? parseInt(año.lte) : null;
+            if (anio && typeof anio === 'object') {
+                const gte = anio.gte ? parseInt(anio.gte) : null;
+                const lte = anio.lte ? parseInt(anio.lte) : null;
                 versionesFiltradas = vehicle.versiones.filter((v) => {
                     return (
-                        (gte === null || v.año >= gte) &&
-                        (lte === null || v.año <= lte)
+                        (gte === null || v.anio >= gte) &&
+                        (lte === null || v.anio <= lte)
                     );
                 });
             }
