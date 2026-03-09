@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1762269724252" clover="3.2.0">
-  <project timestamp="1762269724254" name="All files">
-    <metrics statements="80" coveredstatements="65" conditionals="34" coveredconditionals="17" methods="8" coveredmethods="6" elements="122" coveredelements="88" complexity="0" loc="80" ncloc="80" packages="5" files="5" classes="5"/>
+<coverage generated="1773091480445" clover="3.2.0">
+  <project timestamp="1773091480446" name="All files">
+    <metrics statements="89" coveredstatements="74" conditionals="34" coveredconditionals="17" methods="9" coveredmethods="7" elements="132" coveredelements="98" complexity="0" loc="89" ncloc="89" packages="5" files="7" classes="7"/>
     <package name="vehicle-backend">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="C:\Users\ralon\OneDrive\Escritorio\CarLog\vehicle-backend\app.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
       </file>
     </package>
     <package name="vehicle-backend.controllers">
-      <metrics statements="57" coveredstatements="43" conditionals="34" coveredconditionals="17" methods="7" coveredmethods="6"/>
+      <metrics statements="59" coveredstatements="45" conditionals="34" coveredconditionals="17" methods="8" coveredmethods="7"/>
+      <file name="Healthcontroller.js" path="C:\Users\ralon\OneDrive\Escritorio\CarLog\vehicle-backend\controllers\Healthcontroller.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
       <file name="vehicleController.js" path="C:\Users\ralon\OneDrive\Escritorio\CarLog\vehicle-backend\controllers\vehicleController.js">
         <metrics statements="57" coveredstatements="43" conditionals="34" coveredconditionals="17" methods="7" coveredmethods="6"/>
         <line num="1" count="2" type="stmt"/>
@@ -60,22 +67,22 @@
         <line num="97" count="1" type="stmt"/>
         <line num="102" count="1" type="stmt"/>
         <line num="107" count="0" type="stmt"/>
-        <line num="116" count="2" type="stmt"/>
+        <line num="115" count="2" type="stmt"/>
+        <line num="116" count="4" type="stmt"/>
         <line num="117" count="4" type="stmt"/>
-        <line num="118" count="4" type="stmt"/>
-        <line num="127" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="128" count="2" type="stmt"/>
-        <line num="134" count="2" type="stmt"/>
-        <line num="139" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="140" count="0" type="stmt"/>
-        <line num="146" count="0" type="stmt"/>
-        <line num="154" count="2" type="stmt"/>
+        <line num="126" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="127" count="2" type="stmt"/>
+        <line num="133" count="2" type="stmt"/>
+        <line num="138" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="153" count="2" type="stmt"/>
+        <line num="154" count="4" type="stmt"/>
         <line num="155" count="4" type="stmt"/>
-        <line num="156" count="4" type="stmt"/>
-        <line num="157" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="158" count="2" type="stmt"/>
-        <line num="163" count="2" type="stmt"/>
-        <line num="168" count="0" type="stmt"/>
+        <line num="156" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="157" count="2" type="stmt"/>
+        <line num="162" count="2" type="stmt"/>
+        <line num="167" count="0" type="stmt"/>
       </file>
     </package>
     <package name="vehicle-backend.database_models">
@@ -98,7 +105,15 @@
       </file>
     </package>
     <package name="vehicle-backend.routes">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="healthRoutes.js" path="C:\Users\ralon\OneDrive\Escritorio\CarLog\vehicle-backend\routes\healthRoutes.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
       <file name="vehicleRoutes.js" path="C:\Users\ralon\OneDrive\Escritorio\CarLog\vehicle-backend\routes\vehicleRoutes.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
