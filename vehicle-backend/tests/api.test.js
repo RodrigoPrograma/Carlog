@@ -80,3 +80,10 @@ describe('API CarLog', () => {
         expect(res.body.success).toBe(false);
     });
 });
+describe('Health check', () => {
+    it('should return API status OK', async () => {
+        const res = await request(app).get('/api/health');
+        expect(res.status).toBe(200);
+        expect(res.body).toHaveProperty('status');
+    });
+});
