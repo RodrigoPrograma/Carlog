@@ -80,10 +80,25 @@ describe('API CarLog', () => {
         expect(res.body.success).toBe(false);
     });
 });
-describe('Health check', () => {
-    it('should return API status OK', async () => {
-        const res = await request(app).get('/api/health');
-        expect(res.status).toBe(200);
-        expect(res.body).toHaveProperty('status');
+const { healthCheck } = require('../controllers/Healthcontroller');
+
+describe('HealthController', () => {
+    it('should return API health status', () => {
+        const req = {};
+
+        const res = {
+            status: jest.fn().mockReturnThis(),
+            json: jest.fn(),
+        };
+
+        healthCheck(req, res);
+
+        expect(res.status).toHaveBeenCalledWith(200);
+
+        expect(res.json).toHaveBeenCalledWith(
+            expect.objectContaining({
+                status: 'ok',
+            }),
+        );
     });
 });
