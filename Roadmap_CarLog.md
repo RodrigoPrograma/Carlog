@@ -36,11 +36,74 @@
 ## 4. Pruebas
 
 - [x] Testear CRUD completo en Postman  
-- [ ] Crear colección de Postman exportable  
+- [x] Crear colección de Postman exportable  
 - [x] Implementar tests unitarios con Jest o Mocha  
 - [x] Automatizar tests en GitHub Actions (CI/CD)  
 
-## 5. Frontend (React Native)
+## 5. Frontend
+
+### Setup del proyecto
+
+- [ ] Crear proyecto en React con Vite  
+- [ ] Instalar dependencias (axios, react-router-dom)
+- [ ] Crear estructura básica de carpetas (components, pages, services, hooks)
+- [ ] Configurar archivo de conexión a la API (axios)
+
+### Conexión a la API
+
+- [ ] Crear servicio vehicleService.js  
+- [ ] Implementar funciones:
+- getVehicles()
+- getVehicleById(id)
+- createVehicle(data)
+- updateVehicle(id, data)
+- deleteVehicle(id)
+
+### Pantallas
+
+- [ ] Página Lista de vehículos
+- GET /api/vehicles
+- [ ] Página Detalle de vehículo
+- GET /api/vehicles/:id
+- [ ] Página Crear vehículo
+- POST /api/vehicles/
+- [ ] Página Editar vehículo
+- PUT /api/vehicles/
+- [ ] Página Borrar vehículo
+- DELETE /api/vehicles/
+
+### Componentes
+
+- [ ] Componente VehicleCard
+- [ ] Componente VehicleForm
+- [ ] Componente Navbar
+- [ ] Componente Loading
+- [ ] Componente ErrorMessage
+- [ ] Componente Footer
+
+### Funcionalidades
+
+- [ ] Botón Eliminar vehículo
+- [ ] Confirmar antes de eliminar
+- [ ] Feedback visual:
+- loading
+- error
+- success
+
+### Ux básica
+
+- [ ] Mostrar lista en cards o tabla
+- [ ] Navegación entre paginas con React Router
+- [ ] Redirección después de crear/editar vehículo
+
+### Opcional
+
+- [ ] Buscador de vehículos
+- [ ] Filtro por marca
+- [ ] Paginación
+- [ ] Dark Mode
+
+## 6. Frontend (React Native)
 
 - [ ] Crear proyecto en React Native  
 - [ ] Conectar la app a la API (`fetch` o `axios`)  
