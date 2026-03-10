@@ -51,7 +51,7 @@
 
 ### Conexión a la API
 
-- [ ] Crear servicio vehicleService.js  
+- [x] Crear servicio vehicleService.js  
 - [ ] Implementar funciones:
 - getVehicles()
 - getVehicleById(id)
