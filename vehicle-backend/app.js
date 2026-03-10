@@ -5,20 +5,15 @@ const vehiclesRoutes = require('./routes/vehicleRoutes');
 const cors = require('cors');
 
 const app = express();
-/*
-const corsOptions = {
-    origin: 'http://localhost:5173',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: 'Content-Type,Authorization',
-    credentials: true,
-    optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
-*/
-app.use(cors());
+
+app.use(cors({
+    origin: '*', // permite cualquier frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.options('*', cors());
+
 
 // Middlewares
 app.use(express.json());
