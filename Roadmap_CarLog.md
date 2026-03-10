@@ -44,9 +44,9 @@
 
 ### Setup del proyecto
 
-- [ ] Crear proyecto en React con Vite  
+- [x] Crear proyecto en React con Vite  
 - [ ] Instalar dependencias (axios, react-router-dom)
-- [ ] Crear estructura básica de carpetas (components, pages, services, hooks)
+- [x] Crear estructura básica de carpetas (components, pages, services, hooks)
 - [ ] Configurar archivo de conexión a la API (axios)
 
 ### Conexión a la API
